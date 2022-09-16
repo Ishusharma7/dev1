@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1" />
+  <title>Add New Patient | Hospital</title>
+  <link rel="stylesheet" href="/detail.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h1>ABCD Hospital</h1>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <h1>Patient's Details</h1>
+        <br/>
+        <form action="add" method="post">
+          <input class="t1" type="text" placeholder=" Patient Name" name="name" required /><br /><br />
+          <input type="text" placeholder=" Patient Age :" name="age" required /><br /><br />
+          <label id="gender" class="radio-inline" for="gender">Gender : </label><br>
+          Male<input class="male" type="radio" name="gender" id="gender" value="Male" /><br>  
+          Female<input class="female" type="radio" name="gender" id="gender" value="Female" /><br>
+          Other<input class="other" type="radio" name="gender" id="gender" value="Other" /><br /><br />
+          <input type="text" placeholder="Patient Email " name="email" required /><br /><br />
+          <input type="text" placeholder="Patient Phone No " name="phone" required /><br /><br />
+          <input type="text" placeholder="Patient Aadhar No " name="aadhar" required /><br /><br />
+          <input type="text" placeholder="Patient Disease " name="disease" required /><br /><br />
+          <input type="text" placeholder="Report Id " name="reportid" required /><br /><br />
+
+          <input type="text" placeholder=" Report Status " name="status" /><br /><br />
+
+          <input type="text" placeholder="Medicine Recommendation" name="medicine" /><br /><br />
+
+          <input type="text" placeholder=" Note" name="note" /><br /><br />
+          <input type="submit" value="Submit Details" class="sbmt" />
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
